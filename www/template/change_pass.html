@@ -1,0 +1,55 @@
+<ion-view class="bg">
+    <ion-content class="has-footer">
+        <br/><br/>
+        <center>
+            
+            <br><br><br><br>
+
+             
+
+            <div class="card row-70 transparent2">
+                <div class="item item-divider">
+                    Update Username and Password
+                </div>
+
+                <div class="item item-text-wrap">
+                    <div class="updiv">
+                        <form name="signupForm" ng-submit="update_username(update)" nonvalidate="">
+                        <div>
+                            <div class="item item-input-inset"  ng-repeat="b in account">
+                                <label class="item-input-wrapper"><strong>Username :</strong>
+                                    <input type="text" placeholder="Username" id="uname" value="{{b.username}}">
+                                </label>
+                                 <button class="button button-small button-stable transparent2" type="submit"><h4 class="ion-edit"></h4></button>
+                                
+                            </div>
+
+                        </form>
+                            <form name="signupForm" ng-submit="update_password(pass)" nonvalidate="">
+                            <div class="item item-input-inset">
+                                <label class="item-input-wrapper"><strong>Password :</strong>
+                                    <input type="text" placeholder="Password" ng-model="pass.pass">
+                                </label>
+                                 <button class="button button-small transparent2" type="submit"><h4 class="ion-edit"></h4></button>
+                            </div>
+                           
+                        </form>
+                    </div>    
+                    </div>
+                </div>
+            </div>
+           
+        </center>
+    </ion-content>
+   <div class="tabs tabs-icon-only">
+        <a ui-sref="home" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-home"></i>
+        </a>
+        <a ui-sref="settings" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-settings"></i>
+        </a>
+        <a ng-click="logout()" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-log-out"></i>
+        </a>
+    </div>
+</ion-view>

@@ -1,0 +1,85 @@
+<script>
+    window.alert('dsa');
+</script>
+<ion-view class="bg">
+    <ion-content class="has-footer">
+        <br/>
+        <center>
+
+             <div class="list card transparent2">
+                <a ng-click="password()" class="item item-icon-left">
+                    <i class="icon ion-android-remove-circle"></i>
+                    Change Username and Password
+                </a>
+            </div>
+
+             <div class="card row-70 transparent2" ng-repeat="b in account">
+                <div class="item item-divider">
+                    Update Profile
+                </div>
+
+                <div class="item item-text-wrap">
+                    <div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper"><strong>Fname :</strong>
+                                <input id="fname" type="text" placeholder="Firstname" value="{{b.fname}}">
+                            </label>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper"><strong>Mname :</strong>
+                                <input type="text" placeholder="Middlename" value="{{b.mname}}" id="mname">
+                            </label>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper"><strong>Lname :</strong>
+                                <input type="text" placeholder="LastName" value="{{b.lname}}" id="lname">
+                            </label>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper"><strong>Gender : </strong><div> &nbsp;&nbsp;&nbsp;{{b.gender}}</div>&nbsp;&nbsp;&nbsp;<div style="float:right; width:40%;">
+                                <select id="gender" class="item-input-wrapper transparent">
+                                  <option value="{{b.gender}}"></option>
+                                  <option value="female">Female</option>
+                                  <option value="male">Male</option>
+                                </select></div>
+                            </label>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper"><strong>Email :</strong>
+                                <input type="text" placeholder="email" value="{{b.email}}" id="email">
+                            </label>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper"><strong>Contact # :</strong>
+                                <input type="text" placeholder="contact#" value="{{b.contact_no}}" id="con">
+                            </label>
+                        </div>
+                          <div class="item item-input-inset">
+                            <label class="item-input-wrapper"><strong>Address :</strong>
+                                <input type="text" placeholder="Address" value="{{b.address}}" id="add">
+                            </label>
+                        </div>
+                     
+                </div>
+                 <button ng-click="update()" class="button button-balanced transparent2" type="submit">Update Profile</button>
+
+            </div>
+        </center>
+    </ion-content>
+
+
+
+    <div class="tabs tabs-icon-only">
+        <a ui-sref="home" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-home"></i>
+        </a>
+        <a ui-sref="settings" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-settings"></i>
+        </a>
+        <a ng-click="logout()" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-log-out"></i>
+        </a>
+    </div>
+</ion-view>
+
+

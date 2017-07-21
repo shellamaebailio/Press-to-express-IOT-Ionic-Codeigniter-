@@ -1,0 +1,33 @@
+<ion-view class="bg">
+     <ion-header-bar style="">
+            
+            <div class="bar bar-header" style="opacity:.9;">
+                <h1 class="title">Add Details</h1>
+            </div>
+        </ion-header-bar>
+        <ion-content class="transparent1" style="opacity:.9;">
+            <div class="item item-text-wrap font2"  ng-repeat="m in nodetail" style="opacity:.9;">
+
+                <div class="list card" style="width:95%;">
+                
+                    <center>
+
+            <div class="card row-70 transparent2">
+                <div class="item item-divider" >
+                    Patients Need Details
+                </div>
+                    <div>
+                        <label class="item-input-wrapper">
+                        <textarea id="info" class="fontcentury" style="width:100%; height:70%; padding:2%;" type="text" placeholder=" please write the Information about patients' need .." required></textarea>
+                        </label>
+                    </div>
+            </div>
+            <div class="row" >
+              <div class="col"><button ng-click="get(m.trans_id)" class="button button-small button-balanced" type="submit">Job Done</button></div>
+              <div class="col-30"></div>
+              <div class="col"><button ng-click="cancel(m.trans_id)" class="button button-small button-assertive" type="submit">Cancel Accept</button></div>
+            </div></center>
+            </div>
+        </ion-content>
+   </ion-view>
+   

@@ -1,0 +1,29 @@
+<ion-view class="bg">
+    <ion-content>
+        <br/>
+       <center><div class="icon1"></div></center>
+        <center><div class=" list card transparent logsize">
+            <br/>
+            <h3 class="notransparent1 fontcentury">Login</h3>
+
+            <form name="loginForm" ng-submit="login(log)" nonvalidate="">
+
+            <div class="divsize1 notranparent">
+                <div class="list list-inset notransparent1">
+                    <label class="item item-input">
+                        <input class="fontcentury" type="text" placeholder="Username" ng-model="log.username">
+                    </label>
+                    <label class="item item-input">
+                        <input class="fontcentury" type="password" placeholder="Password" ng-model="log.pass">
+                    </label>
+                </div>
+            </div>
+            <br/><br/> <br><br>
+            <div class="bgwhite">
+                <button class="button button-wide button-assertive" type="submit">Login</button>
+            </div>
+            </form>
+            <br/><br/><br/>
+        </div></center>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,60 @@
+<ion-view class="bg">
+    <ion-content class="has-footer">
+        <br/><br/>
+        <center>
+            
+            <br><br><br><br>
+
+             <form name="signupForm" ng-submit="add_patient(add)" nonvalidate="">
+
+
+            <div class="card row-70 transparent2">
+                <div class="item item-divider">
+                    Patients' Information
+                </div>
+
+                <div class="item item-text-wrap">
+                    <div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text" placeholder="Firstname" ng-model="add.fname">
+                            </label>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text" placeholder="Lastname" ng-model="add.lname">
+                            </label>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text" placeholder="Room ID" ng-model="add.rid">
+                            </label>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text" placeholder="Bed number" ng-model="add.bid">
+                            </label>
+                        </div>
+                        <div class="item item-input-inset">
+                            <label class="item-input-wrapper">
+                                <input type="text" placeholder="Device Code" ng-model="add.did">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="button button-balanced transparent2" type="submit">Submit</button>
+
+            </form>
+        </center>
+    </ion-content>
+    <div class="tabs tabs-icon-only">
+       
+        <a ui-sref="admin_setting" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-settings"></i>
+        </a>
+        <a ui-sref="login" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-log-out"></i>
+        </a>
+    </div>
+</ion-view>

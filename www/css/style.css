@@ -1,0 +1,101 @@
+/* Empty. Add your own CSS if you like */
+
+.icon1{
+    background-image: url("../img/icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 100px;
+}
+.bg{
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Century Gothic, sans-serif;
+    /*Copperplate / Copperplate Gothic Light, sans-serif;*/
+}
+.fontcentury{
+    font-family: Century Gothic, sans-serif;
+    color:rgba(0,0,0,1);
+    text-decoration: none;
+}
+.divsize1{
+    padding-top: 15%;
+    height: 20%;
+    width: 82%;
+}
+.item2{
+    width:96%;
+    height: 1%;
+}
+.button-wide{
+    width: 40%;
+}
+.transparent{
+    opacity: .45;
+}
+.notranparent{
+    opacity: 1;
+}
+.notransparent1{
+    color: black;
+}
+.logsize{
+    width: 90%;
+    padding: 3%;
+    margin-bottom: 10px;
+}
+/*.icon{*/
+    /*background-image: url("../img/icon3.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: contain;*/
+    /*height: 30px;*/
+    /*width:  100px;*/
+/*}*/
+label{
+    background-color: #ffffff;
+    background: none;
+    opacity: 1;
+
+}
+button{
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+
+}
+.bgwhite{
+    background-color: white;
+    opacity: 1;
+}
+.tabs{
+    opacity:.4;
+}
+.h{
+    padding: 1%;
+}
+.xsh{
+    height: 1%;
+}
+.call1{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 50%;
+    font-size: 1500%;
+}
+.red{
+    color: red;
+    width: 30%;
+}
+.r{
+    color: red;
+}
+.conf{
+    width: 40%;
+}
+.transparent2{
+    opacity: .7;
+}
+.updiv{
+    width: 99%;
+}

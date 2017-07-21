@@ -1,0 +1,119 @@
+<style>
+          /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+          body {
+      background: #12A5F4;
+      padding: 100px;
+    }
+
+    .skype {
+      background: red;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      backface-visibility: hidden;
+      width: 140px;
+      height: 140px;
+      position: relative;
+      margin: 0 auto;
+      border-radius: 150px;
+      border: solid 15px red;
+      animation: play 1.5s ease infinite;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .skype:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .skype:after {
+      background-size: 100% 100%;
+      color: white;
+      font-size: 15px;
+      font-family: "century gothic";
+      font-weight: bold;
+      text-align: center;
+      width: 100px;
+      height: 200px;
+      margin: 0 auto;
+      position: auto;
+      border-radius: 150px;
+      z-index: 99999 !important;
+    }
+    .skype:hover {
+      animation: none;
+      transform: scale(1.2);
+      transition: 0.7s;
+    }
+    *:focus {
+        outline: none;
+    }
+
+    @keyframes play {
+      0% {
+        transform: scale(1);
+      }
+      15% {
+        box-shadow: 0 0 0 13px rgba(228, 122, 110, 0.2);
+      }
+      25% {
+        box-shadow: 0 0 0 13px rgba(228, 122, 110, 0.2), 0 0 0 23px rgba(228, 122, 110, 0.2);
+      }
+      30% {
+        transform: scale(1.2);
+      }
+      50% {
+        box-shadow: 0 0 0 13px rgba(228, 122, 110, 0.2), 0 0 0 28px rgba(228, 122, 110, 0.2), 0 0 0 30px rgba(228, 122, 110, 0.2);
+      }
+      80% {
+        transform: scale(1);
+      }
+    }
+
+</style>
+
+<ion-view class="bg fontcentury r">
+    <ion-content class="has-footer">
+        <center><div class=" list card transparent logsize" ng-repeat="r in gae" style="padding-top:20%;padding-bottom:15%;">
+                  <div>
+                  <center><button class="skype" style="color:white;">{{r.need}}</button>
+                  </div>    
+                  <div style="padding-top:20%;">
+                  </div>
+                  <div style="text-transform: capitalize;">
+                      {{r.fname}} {{r.mname}} {{r.lname}}
+                  </div>
+                  <div>
+                       Gender: {{r.gender}}
+                  </div>
+                  <div>
+                       Age: {{r.age}}
+                  </div>
+                  <div>
+                      Room {{r.room_no}} Bed {{r.bed_no}}
+                  </div>
+                  <div>
+                  <button ng-click="showmodal(r.trans_id)" class="button button-assertive icon ion-checkmark-round conf"></button>
+                  </div>
+        </div></center>
+
+
+
+    </ion-content>
+    <div class="tabs tabs-icon-only">
+        <a class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-home"></i>
+        </a>
+        <a ui-sref="settings" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-settings"></i>
+        </a>
+        <a ng-click="logout()" class="tab-item nottransparent1 fontcentury">
+            <i class="icon ion-log-out"></i>
+        </a>
+    </div>
+</ion-view>
+

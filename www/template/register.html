@@ -1,0 +1,38 @@
+<ion-view class="bg">
+    <ion-content>
+        <br/><br/><br/>
+       <center><div class="icon1"></div></center>
+        <br/>
+        <center><div class=" list card transparent logsize">
+            <br/>
+            <h3 class="notransparent1 fontcentury">Sign Up</h3>
+            <h5 class="notransparent1 fontcentury"><a class="fontcentury" href="" ui-sref="login">Do you have an account?</a></h5>
+
+            <form name="signupForm" ng-submit="register(reg)" nonvalidate="">
+
+            <div class="divsize1 notranparent">
+                <div class="list list-inset notransparent1">
+                    <label class="item item-input">
+                        <input class="fontcentury" type="text" placeholder="FirstName" ng-model="reg.fname">
+                    </label>
+                    <label class="item item-input">
+                        <input class="fontcentury" type="text" placeholder="LastName" ng-model="reg.lname">
+                    </label>
+                    <label class="item item-input">
+                        <input class="fontcentury" type="text" placeholder="Username" ng-model="reg.username">
+                    </label>
+                    <label class="item item-input">
+                        <input class="fontcentury" type="password" placeholder="Password" ng-model="reg.pass">
+                    </label>
+                     
+                </div>
+            </div>
+            <br/><br/> <br><br><br><br><br><br><br>
+            <div class="bgwhite">
+                <button class="button button-wide button-assertive" type="submit">Submit</button>
+            </div>
+            </form>
+            <br/><br/><br/>
+        </div></center>
+    </ion-content>
+</ion-view>
